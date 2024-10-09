@@ -1,7 +1,7 @@
-using ContactManagerServer.Models;
+using ContactManager.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace ContactManagerServer.Data
+namespace ContactManager.Data
 {
     public class CsvDbContext(DbContextOptions<CsvDbContext> options) : DbContext(options)
     {

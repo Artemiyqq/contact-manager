@@ -1,4 +1,4 @@
-using ContactManagerServer.Data;
+using ContactManager.Data;
 using Microsoft.EntityFrameworkCore;
 
 internal class Program

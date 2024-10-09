@@ -1,5 +1,5 @@
 ﻿let contacts = [];
-let sortDirection = {}; // Object to store the current sort direction of each column
+let sortDirection = {};
 
 function sortTableByColumn(columnIndex) {
     const table = document.getElementById("cotactsBody");

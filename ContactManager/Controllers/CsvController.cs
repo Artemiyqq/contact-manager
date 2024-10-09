@@ -1,10 +1,10 @@
-using ContactManagerServer.Data;
-using ContactManagerServer.Models;
+using ContactManager.Data;
+using ContactManager.Models;
 using CsvHelper;
 using Microsoft.AspNetCore.Mvc;
 using System.Globalization;
 
-namespace ContactManagerServer.Controllers
+namespace ContactManager.Controllers
 {
     [Route("contacts-manager")]
     [ApiController]
@@ -49,7 +49,6 @@ namespace ContactManagerServer.Controllers
             }
             catch (Exception ex)
             {
-                Console.WriteLine("An error occurred while processing the CSV file: " + ex.Message);
                 return StatusCode(500, "An error occurred while processing the CSV file: " + ex.Message);
             }
         }

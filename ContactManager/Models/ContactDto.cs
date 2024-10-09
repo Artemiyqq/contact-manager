@@ -1,7 +1,7 @@
 using CsvHelper.Configuration.Attributes;
 using System.ComponentModel.DataAnnotations;
 
-namespace ContactManagerServer.Models
+namespace ContactManager.Models
 {
     public class ContactDto
     {

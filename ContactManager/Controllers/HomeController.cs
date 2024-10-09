@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace ContactManagerServer.Controllers
+namespace ContactManager.Controllers
 {
     public class HomeController : Controller
     {
