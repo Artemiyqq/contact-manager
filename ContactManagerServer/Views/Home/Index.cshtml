@@ -1,0 +1,49 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+
+<div class="d-flex justify-content-center align-items-center h-100">
+    <div class="row">
+        <div class="col-12">
+            <table class="table table-striped table-bordered">
+                <thead>
+                    <tr>
+                        <th><input type="text" class="form-control" id="nameFilter" onkeyup="applyFilters()"
+                                placeholder="Filter by Name"></th>
+                        <th><input type="text" class="form-control" id="dobFilter" onkeyup="applyFilters()"
+                                placeholder="Filter by Date of Birth"></th>
+                        <th>
+                            <select class="form-control" id="marriedFilter" onchange="applyFilters()">
+                                <option value="">All</option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                        </th>
+                        <th><input type="text" class="form-control" id="phoneFilter" onkeyup="applyFilters()"
+                                placeholder="Filter by Phone"></th>
+                        <th><input type="text" class="form-control" id="salaryFilter" onkeyup="applyFilters()"
+                                placeholder="Filter by Salary"></th>
+                    </tr>
+                    <tr>
+                        <th onclick="sortTableByColumn(0)">Name</th>
+                        <th onclick="sortTableByColumn(1)">Date of Birth</th>
+                        <th onclick="sortTableByColumn(2)">Married</th>
+                        <th onclick="sortTableByColumn(3)">Phone</th>
+                        <th onclick="sortTableByColumn(4)">Salary</th>
+                    </tr>
+                </thead>
+                <tbody id="cotactsBody">
+                </tbody>
+            </table>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-6 col-lg-4">
+                <input type="file" id="csvFile" accept=".csv" class="form-control mb-2">
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <button id="uploadCsvButton" class="btn btn-dark py-1 mt-1" onclick="postCsv()">Upload CSV File</button>
+            </div>
+        </div>
+    </div>
+</div>

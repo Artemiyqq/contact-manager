@@ -1,0 +1,8 @@
+html, body {
+    background-color: antiquewhite;
+}
+
+thead th, tbody td, td {
+    text-align: center;
+    vertical-align: middle;
+}
